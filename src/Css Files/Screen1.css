@@ -1,0 +1,172 @@
+.screen1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 40px;
+  color: #9decec;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background: rgb(144, 115, 222);
+  background: linear-gradient(-10deg, #5af0f5 25%, rgba(33, 5, 110, 1) 55%, #071263 45%);
+  /* background: #9decec; */
+  /* background: linear-gradient(-10deg,  #73fcfc 30%, #56fcfc 50%, #35eeee 80%); */
+}
+
+.introHeader {
+  width: 50%;
+}
+
+.introHeader h1 {
+  padding-bottom: 10px;
+  font-size: 90px;
+  padding-left: 40px;
+}
+
+.introHeader p {
+  padding-left: 40px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #071263;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+  .introHeader h1 {
+    padding-bottom: 10px;
+    font-size: 100px;
+    padding-left: 40px;
+    margin-left: 45px;
+    margin-top: -30px;
+  }
+
+  .introHeader p {
+    padding-left: 57px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #071263;
+    font-weight: 600;
+    white-space: break-spaces;
+    text-overflow: ellipsis;
+    margin-top: 69px;
+    width: 900px;
+    margin-left: 30px;
+  }
+
+}
+
+.introHeader button {
+  font-size: 20px;
+  height: 50px;
+  width: 300px;
+  /* font-family  : 600; */
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.introImg img {
+  width: 600px;
+  height: 600px;
+  /* animation: introImage 2s 0 ease-in-out forwards; */
+
+}
+
+@keyframes introImage {
+  from {
+    transform: translateY(-200px);
+  }
+
+  to {
+    transform: translateY(400px);
+  }
+}
+
+/* @keyframes fadeIN {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .screen1 {
+    width: 100%;
+    height: 965px;
+  }
+
+  .introHeader {
+    background: url(../../src/images/workplace.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 720px 630px;
+    background-position: 30% 10%;
+    width: 100%;
+  }
+
+  .introHeader h1 {
+    padding: 10px 40px;
+    top: -200px;
+    position: relative;
+    font-size: 75px;
+  }
+
+  .introHeader p {
+    position: relative;
+    bottom: -220px;
+    color: #071263;
+    font-weight: 700;
+    padding: 27px 20px;
+    font-size: 22px;
+  }
+
+  .introImg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .screen1 {
+    width: 100%;
+    height: 965px;
+  }
+
+  .introHeader {
+    background: url(../../src/images/workplace.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 425px 470px;
+    background-position: 50% 105%;
+    width: 100%;
+    /* margin-top: -50px; */
+  }
+
+  .introHeader h1 {
+    text-overflow: ellipsis;
+    padding: 10px 15px;
+    top: -110px;
+    position: relative;
+    font-size: 55px;
+    white-space: break-spaces;
+    font-weight: 900;
+    letter-spacing: 2.2px;
+  }
+
+  .introHeader p {
+    position: relative;
+    bottom: -180px;
+    color: #071263;
+    font-weight: 700;
+    padding: 27px 20px;
+    font-size: 22px;
+  }
+
+  .introImg {
+    display: none;
+  }
+
+}

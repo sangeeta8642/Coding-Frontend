@@ -1,0 +1,44 @@
+.progressPage{
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgb(199, 250, 250);
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.progressPage table{
+    width: 60vw;
+    padding: 150px;
+    border-radius: 25px;
+}
+
+.progressPage table td {
+    color: rgb(25, 84, 194);
+    font-size: 20px;
+    border: 2px solid black;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    border-radius: 25px;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.progressPage table th{
+    border: 2px solid black;
+    font-size: 30px;
+    color: #071263;
+
+}
+.list{
+    
+    list-style-type: none;
+    padding: 10px 0px;
+    margin: 0;
+    
+}
+
+/* .list li{
+    cursor: pointer;
+
+} */
