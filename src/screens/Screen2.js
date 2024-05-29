@@ -24,7 +24,7 @@ export default function Screen2() {
   }, [])
 
   async function getLanguage() {
-    let result = await fetch("http://localhost:5000/getLanguages");
+    let result = await fetch("https://codebud-ewkb.onrender.com/getLanguages");
     result = await result.json();
     setLanguages(result)
   }
@@ -32,7 +32,7 @@ export default function Screen2() {
   async function searchItem(e) {
     let key = e.target.value;
     if (key) {
-      let res = await fetch(`http://localhost:5000/search/${key}`);
+      let res = await fetch(`https://codebud-ewkb.onrender.com/search/${key}`);
       res = await res.json();
       setLanguages(res);
     } else {

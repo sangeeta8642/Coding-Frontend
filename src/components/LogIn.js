@@ -25,7 +25,7 @@ export default function LogIn({ onClose, onSignupClick }) {
         }
         else {
             let data = { username: uname, password: pswrd }
-            let result = await fetch("http://localhost:5000/login", {
+            let result = await fetch("https://codebud-ewkb.onrender.com/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

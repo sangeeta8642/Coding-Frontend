@@ -15,7 +15,7 @@ export default function MyProgress() {
 
 
   async function getLanguages() {
-    let result = await fetch(`http://localhost:5000/getLanguage/${user._id}`)
+    let result = await fetch(`https://codebud-ewkb.onrender.com/getLanguage/${user._id}`)
     result = await result.json()
     console.log(result)
     setLanguages(result)

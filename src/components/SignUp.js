@@ -17,7 +17,7 @@ export default function SignUp({ onClose, onLoginClick }) {
 
 
     async function Usernames() {
-        let result = await fetch("http://localhost:5000/usernames");
+        let result = await fetch("https://codebud-ewkb.onrender.com/usernames");
         result = await result.json()
         setUsernames(result)
     }
@@ -127,7 +127,7 @@ export default function SignUp({ onClose, onLoginClick }) {
     async function SignUp(e) {
         e.preventDefault()
         if (isFormValid) {
-            let result = await fetch("http://localhost:5000/signup", {
+            let result = await fetch("https://codebud-ewkb.onrender.com/signup", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

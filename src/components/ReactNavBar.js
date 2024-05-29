@@ -26,7 +26,7 @@ export default function ReactNavBar({ onLoginClick, onSignupClick }) {
 
   async function getProfile() {
     if (user) {
-      let result = await fetch(`http://localhost:5000/getProfile/${user._id}`);
+      let result = await fetch(`https://codebud-ewkb.onrender.com/getProfile/${user._id}`);
       result = await result.json();
       console.log(result);
 
@@ -34,7 +34,7 @@ export default function ReactNavBar({ onLoginClick, onSignupClick }) {
       if (!result.image || result.image === '') {
         setSelectedImage(null); // Set selectedImage to null if there's no image
       } else {
-        setSelectedImage(`http://localhost:5000/${result.image}`);
+        setSelectedImage(`https://codebud-ewkb.onrender.com/${result.image}`);
       }
     }
   }

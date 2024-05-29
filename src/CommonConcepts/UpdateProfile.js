@@ -45,7 +45,7 @@ export default function UpdateProfile() {
 
   async function getProfile() {
     if (userData) {
-      let result = await fetch(`http://localhost:5000/getProfile/${params.id}`);
+      let result = await fetch(`https://codebud-ewkb.onrender.com/getProfile/${params.id}`);
       result = await result.json();
       console.log(result);
 
@@ -53,7 +53,7 @@ export default function UpdateProfile() {
       if (!result.image || result.image === '') {
         setSelectedImage(null); // Set selectedImage to null if there's no image
       } else {
-        setSelectedImage(`http://localhost:5000/${result.image}`);
+        setSelectedImage(`https://codebud-ewkb.onrender.com/${result.image}`);
       }
 
       setUserInfo({
@@ -115,7 +115,7 @@ export default function UpdateProfile() {
 
   async function deleteImage() {
     if (userData) {
-      let result = await fetch(`http://localhost:5000/deleteImage/${params.id}`, {
+      let result = await fetch(`https://codebud-ewkb.onrender.com/deleteImage/${params.id}`, {
         method: "PUT"
       })
       result = await result.json();

@@ -50,7 +50,7 @@ export default function ContentPage(props) {
     if (user) {
       const userId = user._id
       let data = { userId, topicName, languageName, questions }
-      let result = await fetch("http://localhost:5000/setQues", {
+      let result = await fetch("https://codebud-ewkb.onrender.com/setQues", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +67,7 @@ export default function ContentPage(props) {
     if (user) {
       const userId = user._id
       let data = { userId, topicName, languageName, questions }
-      let result = await fetch("http://localhost:5000/setQuestions", {
+      let result = await fetch("https://codebud-ewkb.onrender.com/setQuestions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

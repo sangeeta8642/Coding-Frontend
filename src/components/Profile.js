@@ -31,7 +31,7 @@ export default function Profile() {
     if (userData) {
       try {
         getLanguages()
-        let result = await fetch(`http://localhost:5000/getProfile/${userData._id}`);
+        let result = await fetch(`https://codebud-ewkb.onrender.com/getProfile/${userData._id}`);
         if (!result.ok) {
           throw new Error('Failed to fetch profile data');
         }
@@ -51,7 +51,7 @@ export default function Profile() {
   }
 
   async function getLanguages() {
-    let result = await fetch(`http://localhost:5000/getLanguage/${userData._id}`)
+    let result = await fetch(`https://codebud-ewkb.onrender.com/getLanguage/${userData._id}`)
     result = await result.json()
     console.log(result)
     setLanguages(result)

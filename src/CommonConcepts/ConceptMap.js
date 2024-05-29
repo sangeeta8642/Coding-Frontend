@@ -22,7 +22,7 @@ export default function ConceptMap(props) {
             const userId = user._id
             let data = { userId, languageName }
             // console.log(data);
-            let result = await fetch("http://localhost:5000/getTopics", {
+            let result = await fetch("https://codebud-ewkb.onrender.com/getTopics", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

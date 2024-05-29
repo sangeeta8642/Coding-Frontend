@@ -29,7 +29,7 @@ export default function ChangePassword({ onClose }) {
     }
 
     async function Submit() {
-        let result = await fetch(`http://localhost:5000/changePswrd/${user._id}`, {
+        let result = await fetch(`http://codebud-ewkb.onrender.com/changePswrd/${user._id}`, {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json'
