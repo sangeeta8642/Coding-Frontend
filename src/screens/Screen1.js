@@ -36,9 +36,9 @@ export default function Screen1() {
                 <div className="introHeader">
                     {
                         userData?<> <h1 className="introHeaderh1" >Welcome <span style={{textDecoration:"underline"}}>{userData.Fname}</span> <br></br> To The World's Best Coding Platform</h1>
-                        <p style={{color:"#fff"}}>“Break the code barrier with us! We invite you to a realm where learning is exciting, coding is an art, and your journey to mastery begins now."</p>
+                        <p>“Break the code barrier with us! We invite you to a realm where learning is exciting, coding is an art, and your journey to mastery begins now."</p>
                       </>:<> <h1 className="introHeaderh1" >Welcome You <br></br> To The World's Best Coding Platform</h1>
-                    <p style={{color:"#fff"}}>“Break the code barrier with us! We invite you to a realm where learning is exciting, coding is an art, and your journey to mastery begins now."</p>
+                    <p>“Break the code barrier with us! We invite you to a realm where learning is exciting, coding is an art, and your journey to mastery begins now."</p>
                   
                       </>
                     }
