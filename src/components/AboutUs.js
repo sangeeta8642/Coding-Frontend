@@ -22,7 +22,7 @@ export default function AboutUs() {
                     </header>
 
                     <div className='SCards'>
-                        <div className='scard c1'>
+                        {/* <div className='scard c1'>
 
                             <h4>Content Writer</h4>
                             <div className='MemberImg'>
@@ -33,8 +33,8 @@ export default function AboutUs() {
                                 <p>( Bsc IT student )</p>
                                 <p>Contact:<br />Jyotidas4803@gmail.com</p>
                             </div>
-                        </div>
-                        <div className='scard c2'>
+                        </div> */}
+                        {/* <div className='scard c2'>
                             <h4>Professor and<br /> Project Guide</h4>
                             <div className='MemberImg'>
                                 <img src={Proff} />
@@ -44,16 +44,16 @@ export default function AboutUs() {
                                 <p>( Msc IT )</p>
                                 <p>Contact:<br />sumiyamadoo@gmail.com</p>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='scard c3'>
-                            <h4>Frontend and Backend Developer </h4>
+                            <h4>Full Stack Developer </h4>
                             <div className='MemberImg'>
                                 <img src={Me} />
                             </div>
                             <div className='MemberInfo'>
                                 <h4>Sangeeta Peragani</h4>
-                                <p>( Bsc IT student )</p>
-                                <p>Contact:<br />sangeetaperagani@gmail.com</p>
+                                <p>( Bsc IT graduate )</p>
+                                <p>Contact:<br />sangeetaperagani8642@gmail.com</p>
                             </div>
                         </div>
                     </div>
