@@ -16,7 +16,7 @@ body {
     /* justify-content: center; */
     /* align-items: center; */
     /* height: 200vh; */
-    width: 100%;
+    /* width: 100%; */
 }
 
 .aboutUs .scard{
@@ -25,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     row-gap: 5px;
+    width: max-content;
 }
 
 .aboutUs h1 {
